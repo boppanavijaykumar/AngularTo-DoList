@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'TO-DO LIST';
+  title = 'NEUDESIC';
+  updateName(event)
+  {
+    this.title=event;
+  }
 }

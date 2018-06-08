@@ -3,4 +3,12 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
+  <input [(ngModel)]="title"/>
  </div>
+ <app-add-todo-list (propEmitter)="updateName($event)"></app-add-todo-list>
+ <br>
+ <br>
+ <app-view-todo-list></app-view-todo-list>
+
+
+ 
